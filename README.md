@@ -45,13 +45,15 @@ To begin using our API please [apply](https://go.intistele.com/external/client/r
 ```perl
 my %addition_params = (state=> '6546546654');
 ```
-3. use API::Intis
-4. Call API with method
+
+
+## API
+1. use API::Intis
+2. Call API with method
 ```perl
 my $ballance = APIRequest->new('balance');
 ```
 
-## API
 The names of the method are the name .php file
 
 The response object contains the following attributes:
