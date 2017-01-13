@@ -58,27 +58,27 @@ The names of the method are the name .php file
 
 The response object contains the following attributes:
 
-1. The answer is in the form of JSON
+* The answer is in the form of JSON
 ```perl
 $ballance->{request_json};
 ```
-2. The answer is in the form of XML
+* The answer is in the form of XML
 ```perl
 $ballance->{request_xml};
 ```
-3. Text description of the error
+* Text description of the error
 ```perl
 $ballance->{error};
 ```
-4. Request hash
+* Request hash
 ```perl
 $ballance->{request_object};
 ```
-5. Requested outgoing format
+* Requested outgoing format
 ```perl
 $ballance->{out_format};
 ```
-5. Requested method
+* Requested method
 ```perl
 $ballance->{method};
 ```
