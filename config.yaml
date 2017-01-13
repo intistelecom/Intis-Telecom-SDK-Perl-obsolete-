@@ -1,0 +1,4 @@
+APIconnector:
+  login: you_login
+  APIkey: you_API_key
+  host: https://go.intistele.com/external/get/
