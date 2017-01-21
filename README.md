@@ -54,6 +54,7 @@ my $ballance = API::Intis::APIRequest->new('balance');
 ```
 where ('balance') - method. [Look list of methods](#aviable-methods). 
 > $ballance - for example object name.
+
 3. Call API with method with additional options
 ```perl
 my $ballance = API::Intis::APIRequest->new('balance', \%addition_params);
