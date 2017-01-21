@@ -50,13 +50,13 @@ my %addition_params = (state=> '6546546654');
 1. use API::Intis
 2. Call API with method
 ```perl
-my $ballance = APIRequest->new('balance');
+my $ballance = API::Intis::APIRequest->new('balance');
 ```
 where ('balance') - method. [Look list of methods](#aviable-methods). 
 > $ballance - for example object name.
 3. Call API with method with additional options
 ```perl
-my $ballance = APIRequest->new('balance', \%addition_params);
+my $ballance = API::Intis::APIRequest->new('balance', \%addition_params);
 ```
 *Note: list if  additional options. [Look list of methods](#aviable-methods).*
 
@@ -115,4 +115,4 @@ $ballance->{method};
 
 ## License
 The Perl script is released under the
-[MIT license](http://www.opensource.org/licenses/MIT).
+[GPL license](https://opensource.org/licenses/GPL-2.0).
