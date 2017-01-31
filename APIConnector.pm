@@ -9,8 +9,6 @@ use JSON;
 use Data::Dumper;
 use error_codes;
 
-#https://go.intistele.com/external/get/balance.php?login=larissa44&signature=47f43254d063ef90835527edd65d516e&timestamp=1483535892
-
 sub readConfig {
     my $conf = YAML::Tiny->read( 'config.yaml' );
     return (login => $conf->[0]->{APIconnector}->{login}, APIkey => $conf->[0]->{APIconnector}->{APIkey}, host => $conf->[0]->{APIconnector}->{host});
