@@ -1,6 +1,6 @@
 use Modern::Perl;
 use utf8;
-package APIGrab;
+package API::Intis::APIGrab;
 use YAML::Tiny;
 use WWW::Mechanize;
 use Crypt::SSLeay;
@@ -77,7 +77,7 @@ sub connect {
     return (request_json => $request_json, error => \@error, request_xml => $request_xml, request_object => \%{$r}, out_format => !defined $output_format ? 'json' : $output_format );
 };
 
-package APIRequest;
+package API::Intis::APIRequest;
 use JSON;
 sub new {
     my($class, $method, $other_params) = @_;
