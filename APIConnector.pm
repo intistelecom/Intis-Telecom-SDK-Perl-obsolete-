@@ -83,9 +83,9 @@ sub new {
     my($class, $method, $other_params) = @_;
     my %request_params;
     if (defined $other_params) {
-        %request_params = &APIGrab::connect($method, $other_params);
+        %request_params = &API::Intis::APIGrab::connect($method, $other_params);
     } else {
-        %request_params = &APIGrab::connect($method, '');
+        %request_params = &API::Intis::APIGrab::connect($method, '');
     };
     my $self = {
         name => 'APIRequest',
